@@ -28,7 +28,7 @@ const Project = (props: ProjectProps) => {
         <span className="ml-2 -rotate-45">-{'>'}</span>
       </a>
       <p className="mb-6 text-lg leading-8 text-zinc-400">{description}</p>
-      <div className="mb-7 flex flex-wrap gap-2.5">
+      <div className="mb-9 flex flex-wrap gap-2.5">
         {stack.map((tool) => (
           <Badge key={tool} text={tool} />
         ))}
