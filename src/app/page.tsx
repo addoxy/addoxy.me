@@ -113,12 +113,12 @@ const page = () => {
     <main className="flex flex-col">
       {/* about section */}
       <section className="relative mb-44 flex flex-col">
+        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
+          About
+        </h3>
         <h1 className="mb-5 text-5xl font-semibold text-zinc-50">
           Hi. I&apos;m Addoxy.
         </h1>
-        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
-          About
-        </h3>
         <p className="mb-5 text-2xl font-medium text-zinc-300">
           Front-end developer
         </p>
@@ -146,18 +146,20 @@ const page = () => {
       </section>
 
       {/* projects section */}
-      <section className="relative mb-44 flex flex-col gap-y-32">
-        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
+      <section className="relative mb-44 flex flex-col">
+        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
           Projects
         </h3>
-        {PROJECTS.map((project) => (
-          <Project key={project.href} {...project} />
-        ))}
+        <div className="flex flex-col gap-y-32">
+          {PROJECTS.map((project) => (
+            <Project key={project.href} {...project} />
+          ))}
+        </div>
       </section>
 
       {/* skills section */}
       <section className="relative mb-44 flex flex-col">
-        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
+        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
           Skills
         </h3>
         <div className="flex flex-wrap gap-3">
@@ -169,7 +171,7 @@ const page = () => {
 
       {/* contact section */}
       <section className="relative flex flex-col">
-        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
+        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
           Contact
         </h3>
         <div className="flex flex-col gap-2 text-zinc-400 underline">
