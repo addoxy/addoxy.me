@@ -15,8 +15,11 @@ const Project = (props: ProjectProps) => {
 
   return (
     <section className="flex flex-col">
-      <a href={href} className="mb-5">
-        <h2 className="text-3xl font-semibold text-zinc-50">{title}</h2>
+      <a target="_blank" href={href} className="group mb-5 flex">
+        <h2 className="text-3xl font-semibold text-zinc-50 underline-offset-4 group-hover:underline">
+          {title}
+        </h2>
+        <span className="ml-2 -rotate-45">-{'>'}</span>
       </a>
       <p className="mb-6 text-lg leading-8 text-zinc-400">{description}</p>
       <div className="mb-7 flex flex-wrap gap-x-2.5">
