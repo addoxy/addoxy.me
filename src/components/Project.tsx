@@ -1,6 +1,12 @@
 import Badge from './Badge';
-import ImageSlider from './ImageSlider';
-import { StaticImageData } from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/vendor/carousel';
+import Image, { StaticImageData } from 'next/image';
 
 type ProjectProps = {
   href: string;
@@ -27,7 +33,21 @@ const Project = (props: ProjectProps) => {
           <Badge key={tool} text={tool} />
         ))}
       </div>
-      <ImageSlider images={images} />
+      <Carousel>
+        <CarouselContent>
+          {images.map((image, i) => (
+            <CarouselItem key={i}>
+              <Image
+                className="rounded-xl border border-zinc-800"
+                src={image}
+                alt="image"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </section>
   );
 };
