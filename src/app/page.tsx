@@ -146,11 +146,11 @@ const page = () => {
       </section>
 
       {/* projects section */}
-      <section className="relative mb-44 flex flex-col">
+      <section className="relative mb-32 flex flex-col sm:mb-44">
         <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
           Projects
         </h3>
-        <div className="flex flex-col gap-y-32">
+        <div className="flex flex-col gap-y-20 sm:gap-y-32">
           {PROJECTS.map((project) => (
             <Project key={project.href} {...project} />
           ))}
@@ -158,7 +158,7 @@ const page = () => {
       </section>
 
       {/* skills section */}
-      <section className="relative mb-44 flex flex-col">
+      <section className="relative mb-32 flex flex-col sm:mb-44">
         <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
           Skills
         </h3>

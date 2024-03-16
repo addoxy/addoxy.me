@@ -45,6 +45,9 @@ const Project = (props: ProjectProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <p className="mt-2 animate-pulse text-right text-zinc-500 sm:hidden">
+          Swipe
+        </p>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
