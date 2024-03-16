@@ -120,7 +120,7 @@ const page = () => {
           Hi. I&apos;m Addoxy.
         </h1>
         <p className="mb-5 text-2xl font-medium text-zinc-300">
-          Front-end developer
+          Front-end & UI/UX developer
         </p>
         <p className="mb-7 text-lg leading-8 text-zinc-400">
           I build <span className="text-sky-500">beautiful, interactive</span>{' '}
