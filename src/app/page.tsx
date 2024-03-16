@@ -156,7 +156,7 @@ const page = () => {
       </section>
 
       {/* skills section */}
-      <section className="relative flex flex-col">
+      <section className="relative mb-44 flex flex-col">
         <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
           Skills
         </h3>
@@ -164,6 +164,25 @@ const page = () => {
           {SKILLS.map((skill) => (
             <Badge key={skill.tool} text={skill.tool} Logo={skill.logo} />
           ))}
+        </div>
+      </section>
+
+      {/* contact section */}
+      <section className="relative flex flex-col">
+        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
+          Contact
+        </h3>
+        <div className="flex flex-col gap-2 text-zinc-400 underline">
+          <a href="mailto:addoxy.dev@gmail.com">addoxy.dev@gmail.com</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/aditya-kumar-25605b238/"
+          >
+            Linkedin
+          </a>
+          <a target="_blank" href="https://github.com/addoxy">
+            Github
+          </a>
         </div>
       </section>
     </main>
