@@ -8,9 +8,27 @@ import lumosent2 from '@/../public/Lumosent_2.png';
 import lumosent3 from '@/../public/Lumosent_3.png';
 import lumosent4 from '@/../public/Lumosent_4.png';
 import lumosent5 from '@/../public/Lumosent_5.png';
-import { GithubIcon, LinkedinIcon, MailIcon } from '@/components/Icons';
+import zustandLogo from '@/../public/zustand.png';
+import Badge from '@/components/Badge';
+import {
+  CSSLogo,
+  DrizzleLogo,
+  GithubIcon,
+  HTMLLogo,
+  JavascriptLogo,
+  LinkedinIcon,
+  MailIcon,
+  NextAuthLogo,
+  NextjsLogo,
+  PrismaLogo,
+  ReactLogo,
+  ReactQueryLogo,
+  TailwindLogo,
+  TypescriptLogo,
+} from '@/components/Icons';
 import Project from '@/components/Project';
 import StatusBadge from '@/components/StatusBadge';
+import Image from 'next/image';
 
 const PROJECTS = [
   {
@@ -31,6 +49,7 @@ const PROJECTS = [
       'TailwindCSS',
       'Typescript',
       'Prisma',
+      'React Query',
       'NextAuth',
       'DND Kit',
     ],
@@ -38,9 +57,61 @@ const PROJECTS = [
   },
 ];
 
+const SKILLS = [
+  {
+    tool: 'NextJS',
+    logo: <NextjsLogo className="size-6 text-zinc-100" />,
+  },
+  {
+    tool: 'ReactJS',
+    logo: <ReactLogo className="size-6" />,
+  },
+  {
+    tool: 'Typescript',
+    logo: <TypescriptLogo className="size-6" />,
+  },
+  {
+    tool: 'Javascript',
+    logo: <JavascriptLogo className="size-6" />,
+  },
+  {
+    tool: 'TailwindCSS',
+    logo: <TailwindLogo className="size-6" />,
+  },
+  {
+    tool: 'React Query',
+    logo: <ReactQueryLogo className="size-6" />,
+  },
+  {
+    tool: 'Zustand',
+    logo: <Image src={zustandLogo} alt="logo" className="size-6" />,
+  },
+  {
+    tool: 'Prisma',
+    logo: <PrismaLogo className="size-6" />,
+  },
+  {
+    tool: 'Drizzle',
+    logo: <DrizzleLogo className="size-6 text-lime-400" />,
+  },
+  {
+    tool: 'NextAuth',
+    logo: <NextAuthLogo className="size-6" />,
+  },
+  {
+    tool: 'HTML',
+    logo: <HTMLLogo className="size-6" />,
+  },
+  {
+    tool: 'CSS',
+    logo: <CSSLogo className="size-6" />,
+  },
+];
+
 const page = () => {
   return (
     <main className="flex flex-col">
+      {/* about section */}
       <section className="relative mb-44 flex flex-col">
         <h1 className="mb-5 text-5xl font-semibold text-zinc-50">
           Hi. I&apos;m Addoxy.
@@ -73,13 +144,27 @@ const page = () => {
           </a>
         </div>
       </section>
-      <section className="relative flex flex-col gap-y-32">
+
+      {/* projects section */}
+      <section className="relative mb-44 flex flex-col gap-y-32">
         <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
           Projects
         </h3>
         {PROJECTS.map((project) => (
           <Project key={project.href} {...project} />
         ))}
+      </section>
+
+      {/* skills section */}
+      <section className="relative flex flex-col">
+        <h3 className="absolute -left-32 text-sm font-medium text-zinc-400">
+          Skills
+        </h3>
+        <div className="flex flex-wrap gap-3">
+          {SKILLS.map((skill) => (
+            <Badge key={skill.tool} text={skill.tool} Logo={skill.logo} />
+          ))}
+        </div>
       </section>
     </main>
   );
