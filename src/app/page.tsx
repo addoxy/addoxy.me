@@ -1,4 +1,6 @@
-export default function Home() {
+import StatusBadge from '@/components/StatusBadge';
+
+const page = () => {
   return (
     <main className="flex flex-col">
       <h1 className="mb-5 text-5xl font-semibold text-zinc-50">
@@ -12,6 +14,9 @@ export default function Home() {
         <span className="text-sky-500">accessible</span> websites with a focus
         on seamless user experiences
       </p>
+      <StatusBadge available={true} />
     </main>
   );
-}
+};
+
+export default page;
