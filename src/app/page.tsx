@@ -1,3 +1,4 @@
+import { GithubIcon, LinkedinIcon, MailIcon } from '@/components/Icons';
 import StatusBadge from '@/components/StatusBadge';
 
 const page = () => {
@@ -15,6 +16,21 @@ const page = () => {
         on seamless user experiences
       </p>
       <StatusBadge available={true} />
+      <div className="mt-8 flex gap-x-5">
+        <a href="mailto:addoxy.dev@gmail.com" className="group">
+          <MailIcon className="size-5 text-zinc-500 group-hover:text-sky-500" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/aditya-kumar-25605b238/"
+          className="group"
+        >
+          <LinkedinIcon className="size-5 text-zinc-500 group-hover:text-sky-500" />
+        </a>
+        <a target="_blank" href="https://github.com/addoxy" className="group">
+          <GithubIcon className="size-5 text-zinc-500 group-hover:text-sky-500" />
+        </a>
+      </div>
     </main>
   );
 };
