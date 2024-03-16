@@ -1,3 +1,13 @@
+import kanvaboard1 from '@/../public/Kanvaboard_1.png';
+import kanvaboard2 from '@/../public/Kanvaboard_2.png';
+import kanvaboard3 from '@/../public/Kanvaboard_3.png';
+import kanvaboard4 from '@/../public/Kanvaboard_4.png';
+import kanvaboard5 from '@/../public/Kanvaboard_5.png';
+import lumosent1 from '@/../public/Lumosent_1.png';
+import lumosent2 from '@/../public/Lumosent_2.png';
+import lumosent3 from '@/../public/Lumosent_3.png';
+import lumosent4 from '@/../public/Lumosent_4.png';
+import lumosent5 from '@/../public/Lumosent_5.png';
 import { GithubIcon, LinkedinIcon, MailIcon } from '@/components/Icons';
 import Project from '@/components/Project';
 import StatusBadge from '@/components/StatusBadge';
@@ -9,6 +19,7 @@ const PROJECTS = [
     description:
       'A habit tracker that offers effortless habit tracking, detailed statistics to figure out your strong and weak points, and starter kits to help you get started.',
     stack: ['NextJS', 'TailwindCSS', 'Typescript', 'Prisma', 'NextAuth'],
+    images: [lumosent1, lumosent2, lumosent3, lumosent4, lumosent5],
   },
   {
     href: 'https://kanvaboard.addoxy.me/',
@@ -23,6 +34,7 @@ const PROJECTS = [
       'NextAuth',
       'DND Kit',
     ],
+    images: [kanvaboard1, kanvaboard2, kanvaboard3, kanvaboard4, kanvaboard5],
   },
 ];
 

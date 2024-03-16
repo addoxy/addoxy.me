@@ -1,14 +1,17 @@
 import Badge from './Badge';
+import ImageSlider from './ImageSlider';
+import { StaticImageData } from 'next/image';
 
 type ProjectProps = {
   href: string;
   title: string;
   description: string;
   stack: string[];
+  images: StaticImageData[];
 };
 
 const Project = (props: ProjectProps) => {
-  const { href, title, description, stack } = props;
+  const { href, title, description, stack, images } = props;
 
   return (
     <section className="flex flex-col">
@@ -16,11 +19,12 @@ const Project = (props: ProjectProps) => {
         <h2 className="text-3xl font-semibold text-zinc-50">{title}</h2>
       </a>
       <p className="mb-6 text-lg leading-8 text-zinc-400">{description}</p>
-      <div className="flex flex-wrap gap-x-2.5">
+      <div className="mb-7 flex flex-wrap gap-x-2.5">
         {stack.map((tool) => (
           <Badge key={tool} text={tool} />
         ))}
       </div>
+      <ImageSlider images={images} />
     </section>
   );
 };
