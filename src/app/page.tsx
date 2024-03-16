@@ -127,7 +127,7 @@ const page = () => {
           and <span className="text-sky-500">accessible</span> websites with a
           focus on seamless user experiences
         </p>
-        <StatusBadge available={true} />
+        <StatusBadge available={Boolean(parseInt(process.env.AVAILABLE!))} />
         <div className="mt-8 flex gap-x-5">
           <a href="mailto:addoxy.dev@gmail.com" className="group">
             <MailIcon className="size-5 text-zinc-500 group-hover:text-sky-500" />
