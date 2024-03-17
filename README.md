@@ -1,1 +1,1 @@
-Portfolio website. Under construction 🚧.
+My personal website built using NextJS.
