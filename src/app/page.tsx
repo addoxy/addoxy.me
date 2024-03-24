@@ -117,7 +117,7 @@ const page = () => {
           About
         </h3>
         <h1 className="mb-5 text-5xl font-semibold text-zinc-50">
-          Hi. I&apos;m Addoxy.
+          Hi. I&apos;m Aditya.
         </h1>
         <p className="mb-5 text-2xl font-medium text-zinc-300">
           Front-end & UI/UX developer
@@ -175,7 +175,9 @@ const page = () => {
           Contact
         </h3>
         <div className="flex flex-col gap-2 text-zinc-400 underline">
-          <a href="mailto:addoxy.dev@gmail.com">addoxy.dev@gmail.com</a>
+          <a href="mailto:adityakumar13043@gmail.com">
+            adityakumar13043@gmail.com
+          </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/aditya-kumar-25605b238/"

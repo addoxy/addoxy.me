@@ -7,8 +7,9 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Addoxy',
-  description: 'Portfolio website',
+  title: 'Aditya - Front-end & UI/UX developer',
+  description:
+    'Portfolio website of Aditya a front-end & UI/UX developer who builds beautiful, interactive and accessible websites with a focus on seamless user experiences',
 };
 
 export const viewport: Viewport = {
