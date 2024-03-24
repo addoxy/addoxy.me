@@ -36,7 +36,14 @@ const PROJECTS = [
     title: 'Lumosent',
     description:
       'A habit tracker that offers effortless habit tracking, detailed statistics to figure out your strong and weak points, and starter kits to help you get started.',
-    stack: ['NextJS', 'TailwindCSS', 'Typescript', 'Prisma', 'NextAuth'],
+    stack: [
+      'NextJS',
+      'ReactJS',
+      'TailwindCSS',
+      'Typescript',
+      'Prisma',
+      'NextAuth',
+    ],
     images: [lumosent1, lumosent2, lumosent3, lumosent4, lumosent5],
   },
   {
@@ -46,12 +53,12 @@ const PROJECTS = [
       'A minimal project management app that lets you keep track of and sort your tasks using a drag and drop interface.',
     stack: [
       'NextJS',
+      'ReactJS',
       'TailwindCSS',
       'Typescript',
       'Prisma',
       'React Query',
       'NextAuth',
-      'DND Kit',
     ],
     images: [kanvaboard1, kanvaboard2, kanvaboard3, kanvaboard4, kanvaboard5],
   },
