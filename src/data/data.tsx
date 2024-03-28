@@ -4,11 +4,8 @@ import zustandLogo from '@/../public/zustand.png';
 import {
   CSSLogo,
   DrizzleLogo,
-  GithubIcon,
   HTMLLogo,
   JavascriptLogo,
-  LinkedinIcon,
-  MailIcon,
   NextAuthLogo,
   NextjsLogo,
   PrismaLogo,
