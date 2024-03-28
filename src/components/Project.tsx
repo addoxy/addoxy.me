@@ -27,30 +27,17 @@ const Project = (props: ProjectProps) => {
         </h2>
         <span className="ml-2 -rotate-45">-{'>'}</span>
       </a>
-      <p className="mb-6 text-lg leading-8 text-zinc-400">{description}</p>
+      <p className="mb-6 text-lg text-zinc-400">{description}</p>
       <div className="mb-9 flex flex-wrap gap-2.5">
         {stack.map((tool) => (
           <Badge key={tool} text={tool} />
         ))}
       </div>
-      <Carousel>
-        <CarouselContent>
-          {images.map((image, i) => (
-            <CarouselItem key={i}>
-              <Image
-                className="rounded-xl border border-zinc-800"
-                src={image}
-                alt="image"
-              />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <p className="mt-2 animate-pulse text-right text-zinc-500 sm:hidden">
-          Swipe
-        </p>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <Image
+        src={images[0]}
+        alt={title + ' image'}
+        className="rounded-xl border border-zinc-800"
+      />
     </section>
   );
 };

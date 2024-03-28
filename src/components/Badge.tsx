@@ -9,12 +9,12 @@ const Badge = (props: BadgeProps) => {
   return (
     <>
       {!Logo && (
-        <div className="w-fit items-center gap-x-2 rounded-md bg-zinc-900 px-2.5 py-1.5 text-zinc-200">
+        <div className="w-fit items-center gap-x-2 rounded-md bg-zinc-800 px-2.5 py-1.5 text-zinc-300">
           {text}
         </div>
       )}
       {Logo && (
-        <div className="flex w-fit items-center gap-x-2 rounded-md bg-zinc-900 px-3 py-2 text-zinc-200">
+        <div className="flex w-fit items-center gap-x-2 rounded-md bg-zinc-800 px-3 py-2 text-zinc-200">
           {Logo}
           {text}
         </div>

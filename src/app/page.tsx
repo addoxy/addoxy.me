@@ -120,16 +120,14 @@ const page = () => {
     <main className="flex flex-col">
       {/* about section */}
       <section className="relative mb-44 flex flex-col">
-        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
-          About
-        </h3>
+        <h3 className="mb-6 text-sm font-medium text-zinc-400">About</h3>
         <h1 className="mb-5 text-5xl font-semibold text-zinc-50">
           Hi. I&apos;m Aditya.
         </h1>
-        <p className="mb-5 text-2xl font-medium text-zinc-300">
+        <p className="mb-5 text-2xl font-medium text-zinc-400">
           Front-end & UI/UX developer
         </p>
-        <p className="mb-7 text-lg leading-8 text-zinc-400">
+        <p className="mb-7 text-lg leading-8 text-zinc-300">
           I build <span className="text-sky-500">beautiful, interactive</span>{' '}
           and <span className="text-sky-500">accessible</span> websites with a
           focus on seamless user experiences
@@ -154,9 +152,7 @@ const page = () => {
 
       {/* projects section */}
       <section className="relative mb-32 flex flex-col sm:mb-44">
-        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
-          Projects
-        </h3>
+        <h3 className="mb-6 text-sm font-medium text-zinc-400">Projects</h3>
         <div className="flex flex-col gap-y-20 sm:gap-y-32">
           {PROJECTS.map((project) => (
             <Project key={project.href} {...project} />
@@ -166,9 +162,7 @@ const page = () => {
 
       {/* skills section */}
       <section className="relative mb-32 flex flex-col sm:mb-44">
-        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
-          Skills
-        </h3>
+        <h3 className="mb-6 text-sm font-medium text-zinc-400">Skills</h3>
         <div className="flex flex-wrap gap-3">
           {SKILLS.map((skill) => (
             <Badge key={skill.tool} text={skill.tool} Logo={skill.logo} />
@@ -178,9 +172,7 @@ const page = () => {
 
       {/* contact section */}
       <section className="relative flex flex-col">
-        <h3 className="mb-6 text-sm font-medium text-zinc-400 lg:absolute lg:-left-32 lg:mb-0">
-          Contact
-        </h3>
+        <h3 className="mb-6 text-sm font-medium text-zinc-400">Connect</h3>
         <div className="flex flex-col gap-2 text-zinc-400 underline">
           <a href="mailto:adityakumar13043@gmail.com">
             adityakumar13043@gmail.com
