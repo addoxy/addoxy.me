@@ -1,8 +1,74 @@
+import zustandLogo from '@/../public/zustand.png';
 import Badge from '@/components/Badge';
 import { GithubIcon, LinkedinIcon, MailIcon } from '@/components/Icons';
+import {
+  CSSLogo,
+  DrizzleLogo,
+  HTMLLogo,
+  JavascriptLogo,
+  NextAuthLogo,
+  NextjsLogo,
+  PrismaLogo,
+  ReactLogo,
+  ReactQueryLogo,
+  TailwindLogo,
+  TypescriptLogo,
+} from '@/components/Icons';
 import Project from '@/components/Project';
 import StatusBadge from '@/components/StatusBadge';
-import { PROJECTS, SKILLS } from '@/data/data';
+import { PROJECTS } from '@/data/data';
+import Image from 'next/image';
+
+const SKILLS = [
+  {
+    tool: 'NextJS',
+    logo: <NextjsLogo className="size-6 text-zinc-100" />,
+  },
+  {
+    tool: 'ReactJS',
+    logo: <ReactLogo className="size-6" />,
+  },
+  {
+    tool: 'Typescript',
+    logo: <TypescriptLogo className="size-6" />,
+  },
+  {
+    tool: 'Javascript',
+    logo: <JavascriptLogo className="size-6" />,
+  },
+  {
+    tool: 'TailwindCSS',
+    logo: <TailwindLogo className="size-6" />,
+  },
+  {
+    tool: 'React Query',
+    logo: <ReactQueryLogo className="size-6" />,
+  },
+  {
+    tool: 'Zustand',
+    logo: <Image src={zustandLogo} alt="logo" className="size-6" />,
+  },
+  {
+    tool: 'Prisma',
+    logo: <PrismaLogo className="size-6" />,
+  },
+  {
+    tool: 'Drizzle',
+    logo: <DrizzleLogo className="size-6 text-lime-400" />,
+  },
+  {
+    tool: 'NextAuth',
+    logo: <NextAuthLogo className="size-6" />,
+  },
+  {
+    tool: 'HTML',
+    logo: <HTMLLogo className="size-6" />,
+  },
+  {
+    tool: 'CSS',
+    logo: <CSSLogo className="size-6" />,
+  },
+];
 
 const page = () => {
   return (
