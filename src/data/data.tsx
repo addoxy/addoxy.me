@@ -1,6 +1,5 @@
 import kanvaboard from '@/../public/Kanvaboard.png';
 import lumosent from '@/../public/Lumosent.png';
-import Image from 'next/image';
 
 export const PROJECTS = [
   {
