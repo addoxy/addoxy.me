@@ -1,11 +1,4 @@
 import Badge from './Badge';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/vendor/carousel';
 import Image, { StaticImageData } from 'next/image';
 
 type ProjectProps = {
@@ -13,11 +6,11 @@ type ProjectProps = {
   title: string;
   description: string;
   stack: string[];
-  images: StaticImageData[];
+  image: StaticImageData;
 };
 
 const Project = (props: ProjectProps) => {
-  const { href, title, description, stack, images } = props;
+  const { href, title, description, stack, image } = props;
 
   return (
     <section className="flex flex-col">
@@ -34,7 +27,7 @@ const Project = (props: ProjectProps) => {
         ))}
       </div>
       <Image
-        src={images[0]}
+        src={image}
         alt={title + ' image'}
         className="rounded-xl border border-zinc-800"
       />

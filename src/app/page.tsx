@@ -1,13 +1,5 @@
-import kanvaboard1 from '@/../public/Kanvaboard_1.png';
-import kanvaboard2 from '@/../public/Kanvaboard_2.png';
-import kanvaboard3 from '@/../public/Kanvaboard_3.png';
-import kanvaboard4 from '@/../public/Kanvaboard_4.png';
-import kanvaboard5 from '@/../public/Kanvaboard_5.png';
-import lumosent1 from '@/../public/Lumosent_1.png';
-import lumosent2 from '@/../public/Lumosent_2.png';
-import lumosent3 from '@/../public/Lumosent_3.png';
-import lumosent4 from '@/../public/Lumosent_4.png';
-import lumosent5 from '@/../public/Lumosent_5.png';
+import kanvaboard from '@/../public/Kanvaboard.png';
+import lumosent from '@/../public/Lumosent.png';
 import zustandLogo from '@/../public/zustand.png';
 import Badge from '@/components/Badge';
 import {
@@ -44,7 +36,7 @@ const PROJECTS = [
       'Prisma',
       'NextAuth',
     ],
-    images: [lumosent1, lumosent2, lumosent3, lumosent4, lumosent5],
+    image: lumosent,
   },
   {
     href: 'https://kanvaboard.addoxy.me/',
@@ -60,7 +52,7 @@ const PROJECTS = [
       'React Query',
       'NextAuth',
     ],
-    images: [kanvaboard1, kanvaboard2, kanvaboard3, kanvaboard4, kanvaboard5],
+    image: kanvaboard,
   },
 ];
 
